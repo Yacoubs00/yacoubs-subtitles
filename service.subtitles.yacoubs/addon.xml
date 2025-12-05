@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addon id="service.subtitles.yacoubs" name="Yacoub's Subs" version="6.4.0" provider-name="Yacoub">
+<addon id="service.subtitles.yacoubs" name="Yacoub's Subs" version="1.1.0" provider-name="Yacoub">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
       <import addon="script.module.requests" />
@@ -8,21 +8,8 @@
     <extension point="xbmc.subtitle.module" library="main.py" />
     <extension point="xbmc.service" library="main_service.py" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Yacoub's Subs - Premium Multi-Source Subtitles</summary>
-        <description lang="en">
-Yacoub's Subs - Premium subtitles
-
-Your ultimate subtitle solution with extensive language support:
-✅ 40+ languages (English, Arabic, Spanish, French, German, Japanese, etc.)
-✅ Movies, TV Shows, and Anime
-✅ Specialized Arabic Anime support (28+ subs per episode)
-
-Powered by 3 premium providers: OpenSubtitles, SubDL, SubSource
-
-Features: Fast and reliable subtitle search with user-configurable API credentials.
-
-Created and maintained by Yacoub.
-        </description>
+        <summary lang="en">Yacoub's Subs - Multi-Source Subtitles</summary>
+        <description lang="en">Add your API keys in settings to use OpenSubtitles, SubDL, and SubSource providers. This addon is based on a4kSubtitles by a4k-openproject. Author: Yacoub00.</description>
         <platform>all</platform>
         <reuselanguageinvoker>true</reuselanguageinvoker>
         <license>MIT License</license>
@@ -32,6 +19,6 @@ Created and maintained by Yacoub.
         <assets>
             <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart></assets>
-        <news>v6.4.0: Streamlined to 3 premium providers (OpenSubtitles, SubDL, SubSource) with user-configurable API credentials. Enter your own API keys in settings for full access.</news>
+        <news>v1.1.0: Fixed - Removed default API keys from settings. Users must configure their own API keys for OpenSubtitles, SubDL, and SubSource.</news>
     </extension>
 </addon>

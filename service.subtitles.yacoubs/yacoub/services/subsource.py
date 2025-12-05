@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# API Key loaded from Kodi settings
-
 __api = "https://api.subsource.net/api/v1"
 
 __search = __api + "/movies/search"
@@ -130,9 +128,10 @@ code_to_ss = {v: k for k, v in ss_to_code.items()}
 def build_search_requests(core, service_name, meta):
     apikey = core.kodi.get_setting(service_name, 'apikey')
     
-    # Use hardcoded key if not set in settings
+    # User must set API key in settings
     if not apikey:
-        apikey = __SUBSOURCE_API_KEY
+        core.logger.error('%s - API key not configured. Please set in addon settings.' % service_name)
+        return []
 
     headers = {"X-API-Key": apikey}
 
@@ -236,9 +235,10 @@ def parse_search_response(core, service_name, meta, response):
 def build_download_request(core, service_name, args):
     apikey = core.kodi.get_setting(service_name, 'apikey')
     
-    # Use hardcoded key if not set in settings
+    # User must set API key in settings
     if not apikey:
-        apikey = __SUBSOURCE_API_KEY
+        core.logger.error('%s - API key not configured. Please set in addon settings.' % service_name)
+        return None
         
     subtitle_id = args["full_link"].split("/")[-1]
     request = {

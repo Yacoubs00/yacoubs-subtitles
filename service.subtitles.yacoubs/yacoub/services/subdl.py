@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# API Key loaded from Kodi settings
-
 def build_search_requests(core, service_name, meta):
     apikey = core.kodi.get_setting(service_name, 'apikey')
     

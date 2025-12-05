@@ -12,11 +12,15 @@
         <setting id="general.prefer_sdh"     label="33107" type="bool"   default="false"  enable="eq(-1,true)" />
         <setting id="general.prefer_forced"  label="33108" type="bool"   default="true"   enable="eq(-1,false)+eq(-2,true)" />
     </category>
-    <!-- Services -->
+    <!-- Services (Alphabetical Order) -->
     <category label="33002">
+        <setting id="kitsunekko.enabled"    label="33210" type="bool" default="true"/>
         <setting id="opensubtitles.enabled" label="33201" type="bool" default="true"/>
+        <setting id="podnadpisi.enabled"    label="33203" type="bool" default="true"/>
         <setting id="subdl.enabled"         label="33205" type="bool" default="true"/>
         <setting id="subsource.enabled"     label="33207" type="bool" default="true"/>
+        <setting id="witanime.enabled"      label="33208" type="bool" default="true"/>
+        <setting id="yify.enabled"          label="33209" type="bool" default="true"/>
     </category>
     <!-- Accounts -->
     <category label="33003">

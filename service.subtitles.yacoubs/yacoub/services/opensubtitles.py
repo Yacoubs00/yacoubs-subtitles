@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Credentials loaded from Kodi settings
-
 __api_host = 'api.opensubtitles.com'
 __api_url = 'https://%s/api/v1'
-__api_key = '7IQ4FYAepMynq20VYYHyj5mVHtx3qvKa'
-__user_agent = 'yacoub v3'
+__user_agent = 'yacoub v7'
 __content_type = 'application/json'
 __date_format = '%Y-%m-%d %H:%M:%S'
 
@@ -16,11 +13,17 @@ def __set_api_headers(core, service_name, request, token_cache=None):
 
     base_url = token_cache['base_url'] if token_cache else __api_host
 
+    # Get API key from user settings
+    api_key = core.kodi.get_setting(service_name, 'apikey')
+    if not api_key:
+        core.logger.error('%s - API key not configured. Please set in addon settings.' % service_name)
+        return
+
     request['url'] = request['url'] % base_url
     request['headers'] = request.get('headers', {})
     request['headers'].update({
         'User-Agent': __user_agent,
-        'Api-Key': __api_key,
+        'Api-Key': api_key,
         'Accept': __content_type,
         'Content-Type': __content_type,
     })
@@ -48,10 +51,10 @@ def build_auth_request(core, service_name):
     username = core.kodi.get_setting(service_name, 'username')
     password = core.kodi.get_setting(service_name, 'password')
 
-    # Use hardcoded credentials if not set in settings
-    if username == '' or password == '':
-        username = __OPENSUBTITLES_USERNAME
-        password = __OPENSUBTITLES_PASSWORD
+    # User must configure credentials in settings
+    if not username or not password:
+        core.logger.error('%s - Username/Password not configured. Please set in addon settings.' % service_name)
+        return
 
     request = {
         'method': 'POST',
