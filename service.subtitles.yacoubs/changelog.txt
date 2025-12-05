@@ -1,0 +1,14 @@
+v5.4.0 (2024-12-04)
+- Fixed: Podnapisi using correct /advanced URL
+- Fixed: Results now sorted alphabetically by language
+- Fixed: Settings refresh immediately without restart
+- Fixed: Icon metadata with news tag
+- Fixed: Logger errors in Subscene, Witanime, Kitsunekko
+- Working: 7 providers (OpenSubtitles, SubDL, SubSource, Subscene, Podnapisi, YIFY, Witanime)
+
+v5.0.0
+- Complete rebranding from a4kSubtitles to Yacoub
+- Custom icon and branding
+
+v4.0.0
+- Initial Yacoub version
