@@ -1,4 +1,4 @@
-# ![Icon](icon.png) Yacoub's Subs
+# Yacoub's Subs <img src="icon.png" width="32" align="top"/>
 
 Kodi Subtitle Addon Repository
 
