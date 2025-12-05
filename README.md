@@ -11,16 +11,24 @@ A comprehensive subtitle addon for Kodi with support for multiple providers and 
 
 ## Installation
 
-### Method 1: Add as Source (Recommended)
+### Method 1: Install Repository (Recommended)
+
+1. Download the repository: [repository.yacoubs.subs-1.0.0.zip](https://github.com/Yacoubs00/yacoubs-subtitles-repo/raw/main/repository.yacoubs.subs-1.0.0.zip)
+2. In Kodi, go to **Settings → Add-ons → Install from zip file**
+3. Select the downloaded repository zip file
+4. The repository will appear as "**Yacoub's Subs Repository**" in Kodi
+5. Now you can install addons from the repository and get automatic updates!
+
+### Method 2: Add as File Manager Source
 
 1. In Kodi, go to **Settings → File Manager → Add source**
-2. Enter path: `https://Yacoubs00.github.io/`
+2. Enter path: `https://yacoubs00.github.io/yacoubs-subtitles-repo/`
 3. Name it: `Yacoub Repo`
 4. Go to **Settings → Add-ons → Install from zip file**
 5. Select `Yacoub Repo` source
-6. Install the repository or addon zip file
+6. Install the repository zip file
 
-### Method 2: Direct Install
+### Method 3: Direct Addon Install (No Auto-Updates)
 
 1. Download the latest addon: [service.subtitles.yacoubs-6.3.0.zip](https://github.com/Yacoubs00/yacoubs-subtitles-repo/releases/latest/download/service.subtitles.yacoubs-6.3.0.zip)
 2. In Kodi, go to **Settings → Add-ons → Install from zip file**
