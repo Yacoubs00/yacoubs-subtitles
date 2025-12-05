@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="icon.png" alt="Yacoub's Subs Logo" width="200"/>
+  <img src="banner.png" alt="Yacoub's Subs" width="800"/>
 </p>
 
-# Yacoub's Subs - Kodi Subtitle Addon Repository
+# Kodi Subtitle Addon Repository
 
 A comprehensive subtitle addon for Kodi with support for multiple providers and languages.
 
