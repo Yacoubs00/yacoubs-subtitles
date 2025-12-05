@@ -45,7 +45,6 @@ After installation:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/Yacoubs00/yacoubs-subtitles-repo/issues)
 - **Version**: 6.3.0
 
 ## Changelog
