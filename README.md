@@ -1,4 +1,4 @@
-# <img src="icon.png" alt="Icon" width="48" style="vertical-align: middle;"/> Yacoub's Subs
+# ![Icon](icon.png) Yacoub's Subs
 
 Kodi Subtitle Addon Repository
 
@@ -6,7 +6,7 @@ A comprehensive subtitle addon for Kodi with support for multiple providers and 
 
 ## Features
 
-- 🌍 **6 Working Providers**: OpenSubtitles, Podnapisi, SubDL, SubSource, YIFY, Kitsunekko, Witanime
+- 🌍 **3 Premium Providers**: OpenSubtitles, SubDL, SubSource
 - 🔤 **Multi-Language Support**: Arabic, English, and many more
 - 🎌 **Anime Optimized**: Special providers for anime content
 - ⚡ **Fast & Reliable**: Optimized search and download
@@ -24,7 +24,7 @@ A comprehensive subtitle addon for Kodi with support for multiple providers and 
 
 ### Direct Install
 
-1. Download the latest addon: [service.subtitles.yacoubs-6.3.0.zip](https://github.com/Yacoubs00/yacoubs-subtitles/releases)
+1. Download the latest addon: [service.subtitles.yacoubs-6.4.0.zip](https://github.com/Yacoubs00/yacoubs-subtitles/releases/tag/v6.4.0)
 2. In Kodi, go to **Settings → Add-ons → Install from zip file**
 3. Select the downloaded zip file
 
@@ -32,11 +32,11 @@ A comprehensive subtitle addon for Kodi with support for multiple providers and 
 
 | Provider | Status |
 |----------|--------|
-| OpenSubtitles | ✅ Working |
-| SubDL | ✅ Working |
-| SubSource | ✅ Working |
-| YIFY | ✅ Working |
-| Others (Witanime, Kitsunekko, Podnapisi) | Partial |
+| OpenSubtitles | ✅ Requires API credentials |
+| SubDL | ✅ Requires API key |
+| SubSource | ✅ Requires API key |
+
+**Note**: You must configure your own API credentials in addon settings for the providers to work.
 
 ## Configuration
 
