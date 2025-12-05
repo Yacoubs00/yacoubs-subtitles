@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Hardcoded API Key
-__SUBDL_API_KEY = 'DxWYEw0CJsFId6lU5EM8PwfIOFijS3ND'
+# API Key loaded from Kodi settings
 
 def build_search_requests(core, service_name, meta):
     apikey = core.kodi.get_setting(service_name, 'apikey')
     
-    # Use hardcoded key if not set in settings
+    # User must set API key in settings
     if not apikey:
-        apikey = __SUBDL_API_KEY
+        core.logger.error('%s - API key not configured. Please set in addon settings.' % service_name)
+        return []
 
     lang_ids = core.utils.get_lang_ids(meta.languages, core.kodi.xbmc.ISO_639_1)
     params = {

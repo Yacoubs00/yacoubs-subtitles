@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Hardcoded API Key
-__SUBSOURCE_API_KEY = 'sk_666c7b10558b88822aead605e68a85642790c0df8dfc254a561a8b1d84a3a812'
+# API Key loaded from Kodi settings
 
 __api = "https://api.subsource.net/api/v1"
 

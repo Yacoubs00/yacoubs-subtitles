@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Hardcoded credentials
-__OPENSUBTITLES_USERNAME = 'mohamocto@gmail.com'
-__OPENSUBTITLES_PASSWORD = 'Aljedai@1010'
+# Credentials loaded from Kodi settings
 
 __api_host = 'api.opensubtitles.com'
 __api_url = 'https://%s/api/v1'

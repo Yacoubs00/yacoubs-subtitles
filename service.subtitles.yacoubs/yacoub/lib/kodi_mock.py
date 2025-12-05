@@ -15,11 +15,11 @@ class Addon:
     def __init__(self, id=None):
         self.id = id or 'service.subtitles.a4ksubtitles'
         self._settings = {
-            # Correct setting keys based on how services access them
-            'subdl.apikey': 'DxWYEw0CJsFId6lU5EM8PwfIOFijS3ND',
-            'subsource.apikey': 'sk_666c7b10558b88822aead605e68a85642790c0df8dfc254a561a8b1d84a3a812',
-            'opensubtitles.username': 'mohamocto@gmail.com',
-            'opensubtitles.password': 'Aljedai@1010',
+            # Empty credentials - user must configure in addon settings
+            'subdl.apikey': '',
+            'subsource.apikey': '',
+            'opensubtitles.username': '',
+            'opensubtitles.password': '',
         }
     
     def getSetting(self, key):
