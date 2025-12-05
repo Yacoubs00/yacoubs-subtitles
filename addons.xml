@@ -3,9 +3,9 @@
     <addon id="repository.yacoubs.subs" name="Yacoub's Subs Repository" version="1.0.0" provider-name="Yacoub">
         <extension point="xbmc.addon.repository" name="Yacoub's Subs Repository">
             <dir>
-                <info compressed="false">https://yacoubs00.github.io/Subtitles/addons.xml</info>
-                <checksum>https://yacoubs00.github.io/Subtitles/addons.xml.md5</checksum>
-                <datadir zip="true">https://yacoubs00.github.io/Subtitles/</datadir>
+                <info compressed="false">https://yacoubs00.github.io/addons.xml</info>
+                <checksum>https://yacoubs00.github.io/addons.xml.md5</checksum>
+                <datadir zip="true">https://yacoubs00.github.io/</datadir>
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
@@ -24,27 +24,39 @@
     </addon>
     <addon id="service.subtitles.yacoubs" name="Yacoub's Subs" version="6.3.0" provider-name="Yacoub">
         <requires>
-            <import addon="xbmc.python" version="3.0.0"/>
-            <import addon="script.module.requests" version="2.22.0"/>
-            <import addon="script.module.chardet" version="3.0.0"/>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.requests" />
+            <import addon="vfs.libarchive" optional="true" />
         </requires>
-        <extension point="xbmc.subtitle.module" library="main.py"/>
+        <extension point="xbmc.subtitle.module" library="main.py" />
+        <extension point="xbmc.service" library="main_service.py" />
         <extension point="xbmc.addon.metadata">
-            <summary lang="en">Yacoub's Subs - Multi-Provider Subtitle Addon</summary>
-            <description lang="en">Comprehensive subtitle addon with 6 working providers: OpenSubtitles, Podnapisi, SubDL, SubSource, YIFY, Kitsunekko, and Witanime. Supports Arabic, English, and many other languages. Optimized for anime content.</description>
+            <summary lang="en">Yacoub's Subs - Premium Multi-Source Subtitles</summary>
+            <description lang="en">
+Yacoub's Subs - Premium subtitles
+
+Your ultimate subtitle solution with extensive language support:
+✅ 40+ languages (English, Arabic, Spanish, French, German, Japanese, etc.)
+✅ Movies, TV Shows, and Anime
+✅ Specialized Arabic Anime support (28+ subs per episode)
+
+Powered by 5+ providers: OpenSubtitles, SubDL, SubSource, Podnapisi, YIFY
+
+Features: 180+ subtitles per search, automatic language detection from Kodi settings, fast and reliable.
+
+Created and maintained by Yacoub.
+        </description>
             <platform>all</platform>
-            <license>MIT</license>
-            <forum></forum>
-            <website>https://github.com/Yacoubs00/yacoubs00.github.io</website>
-            <source>https://github.com/Yacoubs00/yacoubs00.github.io</source>
-            <news>v6.3.0: Removed AnimeTosho (provides torrents not subtitle files). 6 working providers: OpenSubtitles, Podnapisi, SubDL, SubSource, YIFY, Kitsunekko, Witanime. All core features work!</news>
+            <reuselanguageinvoker>true</reuselanguageinvoker>
+            <license>MIT License</license>
+            <website>https://github.com/yacoub-subs</website>
+            <source>https://github.com/yacoub-subs/yacoubs-subs</source>
+            <email>yacoub.subs@gmail.com</email>
             <assets>
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
-                <screenshot>screenshot-01.png</screenshot>
-                <screenshot>screenshot-02.png</screenshot>
-                <screenshot>screenshot-03.png</screenshot>
             </assets>
+            <news>v6.3.0: Removed AnimeTosho (provides torrents not subtitle files). 6 working providers: OpenSubtitles, Podnapisi, SubDL, SubSource, YIFY, Kitsunekko, Witanime. All core features work!</news>
         </extension>
     </addon>
 </addons>
