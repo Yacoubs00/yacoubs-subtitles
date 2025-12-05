@@ -1,8 +1,6 @@
-<p align="center">
-  <img src="banner.png" alt="Yacoub's Subs" width="800"/>
-</p>
+# <img src="icon.png" alt="Icon" width="48" style="vertical-align: middle;"/> Yacoub's Subs
 
-# Kodi Subtitle Addon Repository
+Kodi Subtitle Addon Repository
 
 A comprehensive subtitle addon for Kodi with support for multiple providers and languages.
 
@@ -15,26 +13,18 @@ A comprehensive subtitle addon for Kodi with support for multiple providers and 
 
 ## Installation
 
-### Method 1: Install Repository (Recommended)
-
-1. Download the repository: [repository.yacoubs.subs-1.0.0.zip](https://yacoubs00.github.io/Subtitles/repository.yacoubs.subs-1.0.0.zip)
-2. In Kodi, go to **Settings → Add-ons → Install from zip file**
-3. Select the downloaded repository zip file
-4. The repository will appear as "**Yacoub's Subs Repository**" in Kodi
-5. Now you can install addons from the repository and get automatic updates!
-
-### Method 2: Add as File Manager Source
+### Install from Repository
 
 1. In Kodi, go to **Settings → File Manager → Add source**
-2. Enter path: `https://yacoubs00.github.io/Subtitles/`
-3. Name it: `Yacoub Subs`
+2. Enter path: `https://yacoubs00.github.io/`
+3. Name it: `Yacoub Repo`
 4. Go to **Settings → Add-ons → Install from zip file**
-5. Select `Yacoub Subs` source
-6. Install the repository zip file
+5. Select `Yacoub Repo` source and install `repository.yacoubs-1.0.0.zip`
+6. Install addons from: **Install from repository → Yacoub's Repository → Subtitles → Yacoub's Subs**
 
-### Method 3: Direct Addon Install (No Auto-Updates)
+### Direct Install
 
-1. Download the latest addon: [service.subtitles.yacoubs-6.3.0.zip](https://yacoubs00.github.io/Subtitles/service.subtitles.yacoubs-6.3.0.zip)
+1. Download the latest addon: [service.subtitles.yacoubs-6.3.0.zip](https://github.com/Yacoubs00/yacoubs-subtitles/releases)
 2. In Kodi, go to **Settings → Add-ons → Install from zip file**
 3. Select the downloaded zip file
 
@@ -58,20 +48,6 @@ After installation:
 ## Support
 
 - **Version**: 6.3.0
-
-## Changelog
-
-### v6.3.0 (Latest)
-- Removed AnimeTosho (provides torrents not subtitle files)
-- 6 working providers
-- All core features working perfectly
-
-### v6.2.0
-- Restored Podnapisi to original API
-- Removed Subscene completely
-
-### v6.1.0
-- Enabled all working providers by default
 
 ## License
 
