@@ -1,0 +1,132 @@
+# XBMC Media Center language file
+msgid ""
+msgstr ""
+
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+# Categories
+msgctxt "#33001"
+msgid "General"
+msgstr ""
+
+msgctxt "#33002"
+msgid "Services"
+msgstr ""
+
+msgctxt "#33003"
+msgid "Accounts"
+msgstr ""
+
+# General
+msgctxt "#33101"
+msgid "Request timeout"
+msgstr ""
+
+msgctxt "#33102"
+msgid "Results limit"
+msgstr ""
+
+msgctxt "#33103"
+msgid "Auto search"
+msgstr ""
+
+msgctxt "#33104"
+msgid "Auto download first subtitle silently"
+msgstr ""
+
+msgctxt "#33105"
+msgid "Auto detect subtitle encoding"
+msgstr ""
+
+msgctxt "#33106"
+msgid "Auto select embedded subtitle"
+msgstr ""
+
+msgctxt "#33107"
+msgid "Prefer SDH (embedded only)"
+msgstr ""
+
+msgctxt "#33108"
+msgid "Prefer forced (embedded only)"
+msgstr ""
+
+msgctxt "#33110"
+msgid "Smart search (auto-skip providers based on content type)"
+msgstr ""
+
+msgctxt "#33109"
+msgid "Cache expiry time (minutes)"
+msgstr ""
+
+
+# Services
+msgctxt "#33201"
+msgid "OpenSubtitles"
+msgstr ""
+
+msgctxt "#33203"
+msgid "Podnapisi"
+msgstr ""
+
+msgctxt "#33205"
+msgid "SubDL"
+msgstr ""
+
+msgctxt "#33207"
+msgid "SubSource"
+msgstr ""
+
+msgctxt "#33208"
+msgid "Witanime"
+msgstr ""
+
+msgctxt "#33209"
+msgid "YIFY"
+msgstr ""
+
+msgctxt "#33210"
+msgid "Kitsunekko"
+msgstr ""
+
+msgctxt "#33211"
+msgid "Subscene"
+msgstr ""
+
+msgctxt "#33220"
+msgid "AnimeTosho"
+msgstr ""
+
+msgid "Kitsunekko"
+msgstr ""
+
+# Account Labels
+msgctxt "#33301"
+msgid "Username"
+msgstr ""
+
+msgctxt "#33302"
+msgid "Password"
+msgstr ""
+
+msgctxt "#33303"
+msgid "SubDL API Key"
+msgstr ""
+
+msgctxt "#33304"
+msgid "SubSource API Key"
+msgstr ""
+
+# Account Section Headers
+msgctxt "#33401"
+msgid "OpenSubtitles.com Account"
+msgstr ""
+
+msgctxt "#33402"
+msgid "SubDL.com API Key"
+msgstr ""
+
+msgctxt "#33403"
+msgid "SubSource.net API Key"
+msgstr ""
