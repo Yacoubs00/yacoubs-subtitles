@@ -6,15 +6,8 @@ from yacoub.lib import utils
 __all = utils.get_all_relative_entries(__file__)
 __display_names = {
     'opensubtitles': 'OpenSubtitles',
-    'podnadpisi': 'Podnapisi',
     'subdl': 'SubDL',
-    'subsource': 'SubSource',
-    # 'animetosho': 'AnimeTosho',  # DISABLED: Provides torrents not subtitle files
-    'yify': 'YIFY',
-    'subhd': 'SubHD',
-    'kitsunekko': 'Kitsunekko',
-    'anime4up': 'Anime4up',
-    'witanime': 'Witanime'
+    'subsource': 'SubSource'
 }
 
 def __set_fn_if_missing(service, fn_name, fn):
